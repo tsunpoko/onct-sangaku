@@ -8,10 +8,7 @@
 
 <script>
 export default {
-  props: ['title'],
-  mounted () {
-    console.log("Title.vue is called")
-  }
+  props: ['title']
 }
 </script>
 

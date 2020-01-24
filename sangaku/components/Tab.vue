@@ -65,7 +65,6 @@
 export default {
   methods: {
     getIsActive(path) {
-      console.log("path :", this.$route.path)
       return path == this.$route.path ? "is-active" : ""
     }
   }

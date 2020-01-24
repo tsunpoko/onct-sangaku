@@ -3,9 +3,9 @@
     <p class="name">
       {{ item_name }}
     </p>
-    <p class="description">
-      {{ item_description }}
-    </p>
+    <div class="description">
+      <span class="list" v-html="item_description"></span>
+    </div>
   </div>
 </template>
 
@@ -19,6 +19,7 @@ export default {
 .container-description {
   margin-bottom: 20px;
 }
+
 .container-description:hover {
   margin-bottom: 20px;
   font-size: 18px;

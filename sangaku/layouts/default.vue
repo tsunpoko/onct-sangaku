@@ -98,11 +98,11 @@ html {
 
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
-.area{
+.area {
   background: #ffffff;
   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
   width: 100%;
-  height:100vh;
+  min-height: 100vh;
   z-index: 1;
 }
 
@@ -115,7 +115,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  min-height: 150vh;
   /* overflow: hidden; */
 }
 
@@ -186,7 +186,7 @@ html {
   left: 50%;
   width: 25px;
   height: 25px;
-  animation-delay: 15s;
+  animation-delay: 3s;
   animation-duration: 45s;
 }
 
@@ -218,7 +218,7 @@ html {
   left: 15%;
   width: 50px;
   height: 50px;
-  animation-delay: 10s;
+  animation-delay: 5s;
   animation-duration: 5s;
 }
 
