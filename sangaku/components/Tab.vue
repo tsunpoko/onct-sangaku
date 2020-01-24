@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="header">
     <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item has-text-weight-semibold is-family-sans-serif" href="/">
@@ -80,4 +80,8 @@ export default {
   font-weight: 600;
 }
 
+/* .header {
+  width: 100%;
+  position: fixed;
+} */
 </style>
