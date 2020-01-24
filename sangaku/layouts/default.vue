@@ -1,6 +1,7 @@
 <template>
   <div>
     <tab />
+    <nuxt />
   </div>
 </template>
 
