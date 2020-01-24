@@ -28,7 +28,7 @@ export default {
       return  this.$store.getters["kaisoku/kaisokuAll"]
     }
   },
-  async fetch({ app, store }) {
+  async fetch({ store }) {
     if (store.getters["kaisoku/kaisokuAll"].length > 0) {
       return
     }

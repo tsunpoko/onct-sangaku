@@ -46,6 +46,7 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .title {

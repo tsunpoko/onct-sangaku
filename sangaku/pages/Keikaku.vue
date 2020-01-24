@@ -1,29 +1,45 @@
 <template>
   <div class="container">
     <Title :title="title"></Title>
-    <p>
-      本会は、沖縄工業高等専門学校の教育・研究活動を側面より支援すると共に、本件産学間の共同研究を推進し、産学振興に寄与することを目的とする。
-    </p>
+    <div v-for="description in allKeikaku">
+      <Description :item_name="description.name" :item_description="description.description"></Description>
+    </div>
   </div>
 </template>
 
 
 <script>
 import Title from '~/components/Title.vue'
+import Description from '~/components/Description.vue'
 
 export default {
   components: {
-    Title
+    Title,
+    Description
   },
   data () {
     return {
       title: "事業計画"
     }
+  },
+  computed: {
+    allKeikaku() {
+      return  this.$store.getters["keikaku/keikakuAll"]
+    }
+  },
+  async fetch({ store }) {
+    if (store.getters["keikaku/keikakuAll"].length > 0) {
+      return
+    }
+    await store.dispatch("keikaku/fetchKeikaku")
   }
 }
 </script>
 
 
 <style scoped>
+.container {
+  text-align: left;
+}
 
 </style>

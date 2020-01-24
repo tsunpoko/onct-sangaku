@@ -10,8 +10,6 @@ export const mutations = {
 
 export const actions = {
   async fetchKaisoku({ commit }, payload) {
-    // commit("setBusy", true)
-    // commit("clearError")
     let kaisoku = []
     const db = this.$fireApp.firestore()
     const querySnapshot = await db.collection('kaisoku').orderBy("id").get()

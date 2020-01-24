@@ -22,6 +22,7 @@
     <li></li>
     <li></li>
     <li></li>
+    <li></li>
   </ul>
 </div>
 </template>
@@ -267,6 +268,14 @@ html {
   height: 50px;
   animation-delay: 1s;
   animation-duration: 11s;
+}
+
+.circles li:nth-child(19){
+  left: 85%;
+  width: 50px;
+  height: 50px;
+  animation-delay: 0s;
+  animation-duration: 4s;
 }
 
 
