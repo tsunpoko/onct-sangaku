@@ -3,11 +3,11 @@
     <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item has-text-weight-semibold is-family-sans-serif" href="/">
-          <i class="fab fa-battle-net"></i>
+          <i class="fas fa-grip-lines-vertical"></i>
           <p class="mdi mdi-light">
             &nbsp; 沖縄工業高等専門学校 産学連携協力会 &nbsp;
           </p>
-          <i class="fab fa-battle-net"></i>
+          <i class="fas fa-grip-lines-vertical"></i>
         </a>
 
         <a role="button" class="navbar-burger burger " aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -81,7 +81,7 @@ export default {
 }
 
 /* .header {
-  width: 100%;
-  position: fixed;
+width: 100%;
+position: fixed;
 } */
 </style>

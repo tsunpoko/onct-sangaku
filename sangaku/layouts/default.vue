@@ -102,7 +102,7 @@ html {
   background: #ffffff;
   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
   width: 100%;
-  min-height:100vh;
+  height:100vh;
   z-index: 1;
 }
 
@@ -115,7 +115,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   /* overflow: hidden; */
 }
 
