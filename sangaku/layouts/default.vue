@@ -1,7 +1,7 @@
 <template>
   <div>
     <tab />
-    <nuxt />
+    <nuxt class="container" />
   </div>
 </template>
 
@@ -25,6 +25,11 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+
+.container {
+  width: 60%;
+  font-size: 17px;
 }
 
 *,

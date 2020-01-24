@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <Title :title="title"></Title>
     <p>
       第1条（名称）

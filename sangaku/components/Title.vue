@@ -28,7 +28,7 @@ export default {
 
 .title-content {
   min-width: 25%;
-  font-size: 20px;
+  font-size: 22px;
   border-bottom: solid 2px #00d1b2;
 }
 
