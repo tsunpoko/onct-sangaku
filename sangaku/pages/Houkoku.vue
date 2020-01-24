@@ -1,9 +1,6 @@
 <template>
   <div class="container">
     <Title :title="title"></Title>
-    <p>
-      本会は、沖縄工業高等専門学校の教育・研究活動を側面より支援すると共に、本件産学間の共同研究を推進し、産学振興に寄与することを目的とする。
-    </p>
     <FileList :urls="allHoukoku"></FileList>
   </div>
 </template>
