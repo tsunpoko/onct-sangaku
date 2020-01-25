@@ -90,6 +90,13 @@
       </div>
     </div>
 
+    <div id="overlay"  v-show="showContent">
+      <div id="content">
+        <p>お申込みを受け付けました。</p>
+        <p>ありがとうございます。</p>
+        <p><button @click="transToHome()">close</button></p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -103,6 +110,7 @@ export default {
   },
   data () {
     return {
+      showContent: false,
       selected: "",
       title: "各種お手続き",
       corp_name: "",
@@ -115,10 +123,18 @@ export default {
     }
   },
   methods: {
+    transToHome() {
+      this.showContent = false
+      this.$router.push('/')
+    },
+    clearForm() {
+      this.selected = ""
+      this.showContent = true
+    },
     submit() {
       const mailer = this.$fireApp.functions().httpsCallable('sendMail');
       var params = {
-        to: "oor.tnpk3518@gmail.com",
+        to: "ac194606@edu.okinawa-ct.ac.jp",
         msg: ""
       }
 
@@ -145,6 +161,8 @@ export default {
       .finally(req => {
         console.log("end: ", req)
       })
+
+      this.clearForm()
     }
   }
 }
@@ -165,9 +183,9 @@ export default {
 .select-form {
   margin-top: 60px;
 
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .select-form button{
@@ -178,4 +196,28 @@ export default {
 .wrapper {
   text-align: left;
 }
+
+#overlay{
+  z-index:1;
+
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#content{
+  z-index:2;
+  width:50%;
+  padding: 1em;
+  background:#fff;
+}
+
+
 </style>
