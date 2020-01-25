@@ -116,12 +116,39 @@ export default {
   },
   methods: {
     submit() {
-      let = "https://us-central1-sangaku-c010d.cloudfunctions.net/sendMail"
+      const mailer = this.$fireApp.functions().httpsCallable('sendMail');
+      var params = {
+        to: "oor.tnpk3518@gmail.com",
+        msg: ""
+      }
+
+      var os = require("os");
+      var ret = "<br />"
+
+      params.msg = `
+      お問い合わせ内容: ${ this.selected + ret}
+      企業名: ${ this.corp_name + ret}
+      代表者役職・氏名: ${ this.rep_name + ret}
+      住所: ${ this.address + ret}
+      電話番号: ${ this.phone + ret}
+      メールアドレス: ${ this.mail + ret}
+      担当者氏名: ${ this.charge_name + ret}
+      備考: ${ this.memo + ret}
+      `
+
+      mailer(params).then(req => {
+        console.log("sended: ", req)
+      })
+      .catch(err => {
+        console.log("fuck: ", err)
+      })
+      .finally(req => {
+        console.log("end: ", req)
+      })
     }
   }
 }
 </script>
-
 
 <style scoped>
 .container {
@@ -138,9 +165,9 @@ export default {
 .select-form {
   margin-top: 60px;
 
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .select-form button{
