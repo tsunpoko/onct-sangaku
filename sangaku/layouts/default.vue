@@ -212,7 +212,7 @@ html {
   width: 150px;
   height: 150px;
   animation-delay: 0s;
-  animation-duration: 3s;
+  animation-duration: 8s;
 }
 
 .circles li:nth-child(12){
