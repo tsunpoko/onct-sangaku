@@ -134,7 +134,7 @@ export default {
     submit() {
       const mailer = this.$fireApp.functions().httpsCallable('sendMail');
       var params = {
-        to: "ac194606@edu.okinawa-ct.ac.jp",
+        to: "junm@okinawa-ct.ac.jp",
         msg: ""
       }
 
