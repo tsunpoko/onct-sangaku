@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <Title :title="title"></Title>
-    <img class="kaicho-img" src="~/assets/images/kaicho.jpg">
+    <img class="kaicho-img" src="@/assets/images/kaicho.jpg">
     <div class="text-container">
       <p>
         令和元年６月より、沖縄工業高等専門学校産学連携協力会の第四代会長に就任しました古波津 昇でございます。

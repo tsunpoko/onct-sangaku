@@ -16,10 +16,10 @@ export default {
   data() {
     return {
       images: [
-        'http://onct-sangakurenkei.info/static/img/01.beace39.jpg',
-        'http://onct-sangakurenkei.info/static/img/02.219cfbd.jpg',
-        'http://onct-sangakurenkei.info/static/img/03.e134d33.jpg',
-        'http://onct-sangakurenkei.info/static/img/04.9e82593.jpg',
+        require('~/assets/images/01.jpg'),
+        require('~/assets/images/02.jpg'),
+        require('~/assets/images/03.jpg'),
+        require('~/assets/images/04.jpg'),
       ],
       timer: null,
       currentIndex: 0,
