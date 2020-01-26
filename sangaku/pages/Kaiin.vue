@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <Title :title="title"></Title>
+      <p>現在このページはメンテナンス中です</p>
   </div>
 </template>
 

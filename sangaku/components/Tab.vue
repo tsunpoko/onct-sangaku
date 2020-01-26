@@ -17,7 +17,7 @@
         </a>
       </div>
 
-      <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-menu">
         <div class="navbar-start title-tabbar">
           <a class="navbar-item" :class="getIsActive('/')" href="/">
             トップ
