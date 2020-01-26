@@ -18,7 +18,7 @@ export default {
       images: [
         require('~/assets/images/01.jpg'),
         require('~/assets/images/02.jpg'),
-        require('~/assexts/images/03.jpg'),
+        require('~/assets/images/03.jpg'),
         require('~/assets/images/04.jpg'),
       ],
       timer: null,
