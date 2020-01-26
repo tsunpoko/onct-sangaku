@@ -130,6 +130,11 @@ html {
   bottom: -150px;
 }
 
+.circles li:hover{
+  background-color: red;
+  animation-delay: 2s;
+}
+
 .circles li:nth-child(1){
   left: 25%;
   width: 80px;

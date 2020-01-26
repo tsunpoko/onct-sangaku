@@ -36,7 +36,7 @@ export default {
   data() {
     return {
       update_infos: [
-        {timestamp: "2021-11-11", title: "会員ページのメンテナンス中です"},
+        {timestamp: "2020-01-25", title: "会員ページのメンテナンス中です"},
         {timestamp: "2020-01-01", title: "新年の挨拶"},
         {timestamp: "2019-12-01", title: "ホームページのURLが変わりました"},
         {timestamp: "2019-04-25", title: "役員・会員数を更新しました"},
@@ -118,5 +118,10 @@ ul li, ol li {
   padding: 1em;
   list-style-type: none!important;
   font-weight: bold;
+}
+
+li:hover {
+  color: white;
+  background-color: #4a4a4a;
 }
 </style>
