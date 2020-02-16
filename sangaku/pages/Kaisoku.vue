@@ -18,9 +18,7 @@ export default {
   },
   data () {
     return {
-      title: "会則",
-      descriptions: [
-      ]
+      title: "会則"
     }
   },
   computed: {
