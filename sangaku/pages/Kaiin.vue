@@ -101,6 +101,8 @@ export default {
   margin-top: 10px;
   padding-left: 60px;
   font-size: 14px;
+
+    margin-left: 10px;
 }
 
 .detail_content {
@@ -108,17 +110,17 @@ export default {
   padding-left: 60px;
   display: flex;
   flex-direction: row;
-
 }
 
 .detail_position {
   margin-top: 2px;
+  margin-left: 10px;
   vertical-align: bottom;
 }
 
 .detail_person {
   font-size: 18px;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 .detail_url {
