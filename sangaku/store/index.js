@@ -2,7 +2,9 @@ export const state = () => ({
   user: null,
   error: null,
   busy: false,
-  jobDone: false
+  jobDone: false,
+  isLoggedIn: true
+  //isLoggedIn: false
 })
 
 export const mutations = {
@@ -24,4 +26,8 @@ export const mutations = {
 }
 
 export const actions = {
+}
+
+export const getters = {
+  getIsLoggedIn: state => state.isLoggedIn
 }
