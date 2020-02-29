@@ -3,7 +3,7 @@
     <Title title="管理者画面へログイン" />
     <input v-model="email" placeholder="メールアドレス"/>
     <input v-model="password" placeholder="パスワード"/>
-    <button>ログイン</button>
+    <button @click="login()">ログイン</button>
   </div>
 </template>
 
@@ -13,10 +13,17 @@ import Title from '~/components/Title.vue'
 export default {
   components: {
     Title
-  },data() {
+  },
+  data() {
     return {
       email: '',
       password: ''
+    }
+  },
+  methods: {
+    login() {
+      console.log(this.email)
+      console.log(this.password)
     }
   }
 }
