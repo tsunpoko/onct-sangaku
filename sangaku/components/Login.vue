@@ -1,8 +1,8 @@
 <template>
   <div class="login-form">
     <Title title="管理者画面へログイン" />
-    <input v-model="email" placeholder="メールアドレス"/>
-    <input v-model="password" placeholder="パスワード"/>
+    <input v-model="email" type="text" placeholder="メールアドレス"/>
+    <input v-model="password" type="password" placeholder="パスワード"/>
     <button @click="login()">ログイン</button>
   </div>
 </template>
@@ -22,8 +22,12 @@ export default {
   },
   methods: {
     login() {
-      console.log(this.email)
-      console.log(this.password)
+      this.$fireApp.auth().signInWithEmailAndPassword(this.email, this.password)
+      .then( user => {
+        console.log("user: ", user)
+      }, err => {
+        console.log("err: ", err)
+      })
     }
   }
 }
