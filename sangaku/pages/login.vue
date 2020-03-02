@@ -1,6 +1,6 @@
 <template>
-  <div class="container-admin">
-    
+  <div class="container">
+    <Login />
   </div>
 </template>
 
@@ -8,8 +8,6 @@
 import Login from '@/components/Login.vue'
 
 export default {
-  middleware: 'authenticated',
-  layout: 'admin',
   components: {
     Login
   }
@@ -17,10 +15,11 @@ export default {
 </script>
 
 <style scoped>
-.container-admin {
+.container {
   display: flex;
   width: 100%;
   height: 100vh;
+  margin-top: 8%;
   background-color: rgba(255,255, 255, 0.0);
 }
 

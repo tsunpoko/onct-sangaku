@@ -3,8 +3,7 @@ export const state = () => ({
   error: null,
   busy: false,
   jobDone: false,
-  isLoggedIn: true
-  //isLoggedIn: false
+  isLoggedIn: false
 })
 
 export const mutations = {
@@ -22,10 +21,20 @@ export const mutations = {
   },
   setJobDone(state, payload) {
     state.jobDone = payload
+  },
+  setIsLoggedIn(state, payload) {
+    state.isLoggedIn = payload
   }
 }
 
 export const actions = {
+  login({ commit }) {
+    commit('setIsLoggedIn', true)
+  },
+  logout({ commit }) {
+    commit('setIsLoggedIn', false)
+    this.$router.push('/')
+  }
 }
 
 export const getters = {

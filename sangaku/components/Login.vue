@@ -8,7 +8,6 @@
 </template>
 
 <script>
-
 import Title from '~/components/Title.vue'
 export default {
   components: {
@@ -25,6 +24,8 @@ export default {
       this.$fireApp.auth().signInWithEmailAndPassword(this.email, this.password)
       .then( user => {
         console.log("user: ", user)
+        this.$store.dispatch('login')
+        this.$router.push('/settings')
       }, err => {
         console.log("err: ", err)
       })
