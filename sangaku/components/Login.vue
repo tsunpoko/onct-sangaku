@@ -27,6 +27,7 @@ export default {
         this.$store.dispatch('login')
         this.$router.push('/settings')
       }, err => {
+        alert('メールアドレスまたはパスワードが違います')
         console.log("err: ", err)
       })
     }
