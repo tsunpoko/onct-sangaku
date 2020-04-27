@@ -100,7 +100,7 @@ html {
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
 .area {
-  background: #ffffff;
+  background: rgba(0, 0, 0, 0);
   width: 100%;
   min-height: 100vh;
   z-index: 1;
