@@ -14,7 +14,7 @@
       <ul class="menu-list">
         <li><a>会長挨拶</a></li>
         <li><a>会則</a></li>
-        <li><a>役員</a></li>
+        <li><a href="/settings/yakuin">役員</a></li>
         <li><a>会員</a></li>
         <li><a>事業報告</a></li>
         <li><a>事業計画</a></li>

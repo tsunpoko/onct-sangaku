@@ -25,7 +25,6 @@ export default {
   },
   computed: {
     allYakuin() {
-      console.log("fuck")
       return this.$store.getters["yakuin/yakuinAll"]
     }
   },
