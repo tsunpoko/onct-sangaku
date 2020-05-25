@@ -1,8 +1,8 @@
 <template>
   <div class="container-filelist">
     <div v-for="url in urls">
-      <div class="list">
-        <i class="far fa-file-pdf is-primary" style="color: #ff2222; font-size: 32px;"></i>
+      <div class="list" style="padding: 5%; margin-bottom: 20px;">
+        <i class="far fa-file-pdf is-primary" style="color: #ff2222; font-size: 32px; margin-left: 23%;"></i>
         <a :href="url.url" target="_blank" style="margin-left: 20px; color: black;">{{ url.title }}</a>
       </div>
     </div>
@@ -29,9 +29,8 @@ export default {
 .list {
   display:block;
   width: 100%;
-  padding: 5%;
-  margin-bottom: 20px;
-  text-align: center;
+  padding: 10px;
+  padding-bottom: 15px;
 }
 
 .list:hover {
