@@ -108,6 +108,8 @@ html {
   width: 100%;
   min-height: 150vh;
   z-index: 1;
+  display: flex;
+  flex-direction: row;
 }
 
 .nuxt {

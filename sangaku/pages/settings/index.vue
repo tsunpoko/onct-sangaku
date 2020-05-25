@@ -1,6 +1,6 @@
 <template>
   <div class="container-admin">
-    
+
   </div>
 </template>
 
@@ -12,6 +12,10 @@ export default {
   layout: 'admin',
   components: {
     Login
+  },
+  created () {
+    this.$fireApp.auth().onAuthStateChanged((user) => {
+    })
   }
 }
 </script>
